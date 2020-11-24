@@ -1,0 +1,232 @@
+/* css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css styling starts here */
+
+.container{
+    margin: 0 auto;
+    width: 85%;
+}
+
+.header{
+    background-color:#EDEDED  ;
+    height: 25px;
+}
+
+.header ul{
+    float: right;
+}
+
+.header li{
+    float: left;
+    margin: 1px 5px;
+}
+
+.header ul li a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.fbIcon{
+    color:#4460a0;
+}
+
+.twitterIcon{
+    color:#00aaec;
+}
+
+.navbar{
+    height:60px;
+}
+
+.navbar h1 a {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 50px;
+    background: url(./img/最終作業_images/logo.png);
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 8px;
+}
+
+.navbar ul{
+    float: right;
+    margin-top: 8px;
+}
+
+.navbar ul li{
+    float: left;
+}
+
+.navbar ul li a{
+    display: block;
+    color: #00cc99;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 20px;
+}
+
+.banner{
+    background-image: url(./img/最終作業_images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:400px;
+}
+
+.intro{
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding: 30px 10px;
+    width: 100%;
+    background: -webkit-linear-gradient(left , rgb(19, 18, 18) , rgba(18,18,18,.1));
+}
+
+.intro p{
+    color: white;
+    font-size: 38px;
+    padding:10px 10px 10px 4px;
+}
+
+.cards{
+    margin-top: 50px;
+}
+
+.cards ul{
+    margin-top: 20px;
+}
+
+.cards ul li{
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    width:30%;
+    box-shadow: 5px 10px 18px #888888;
+    min-height: 200px;
+    padding:64px;
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: 2%;
+}
+
+.cards ul li img{
+    display: block;
+    margin: 10px auto;
+}
+
+.cards ul li h2{
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cards ul li ul li{
+    list-style: disc;
+    margin-left: 40px;
+    width: 100%;
+    padding: 0;
+    box-shadow: 0 0 0;
+    display: list-item;
+    min-height: 0;  
+}
+
+.clearfix{
+    clear: both;
+}
+
+.tableContent{
+    margin-top: 50px;
+}
+
+.tableContent table{
+    width:88%;
+    margin: auto;
+}
+
+caption{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin:25px;
+}
+
+.tableContent table tr th{
+    border-top: 0.5px solid gray;
+    border-bottom: 0.5px solid gray;
+    padding:10px;
+    font-size: 22px;
+    background-color: #EDEDED;
+    text-align: left;
+    font-weight: bold;
+  }
+
+.tableContent table tr td{
+    font-size: 20px;
+    padding:15px;
+    text-align: left;
+    border-bottom: 0.5px solid gray;
+}
+
+.markGreen{
+    color:#00cc99;
+}
+
+.formContent{
+    width:100%;
+    min-height: 500px;
+    background-image: linear-gradient(#2B6347 ,#3C8761 );
+    margin-top: 80px;
+    padding:50px 0px;
+}
+
+.formContent p{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
