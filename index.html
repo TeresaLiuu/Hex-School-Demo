@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hex School</title>
-    <link rel="shortcut icon" href="./img/多頁式作業＿images/sortcut_icon.ico">
+    <link rel="shortcut icon" href="./img/最終作業_images/sortcut_icon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="keywords" content="Hex School , 六角學院">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -68,59 +69,83 @@
             </ul>
         </div>
         <div class="clearfix"></div>
-        <div class="tableContent">
+        <div class="tableContainer">
             <table>
                 <caption>線上及實體課程的差異</caption>
-				<tr>
-					<th>項目</th>
-					<th>Hex School 線上課程</th>
-					<th>一般線上課程</th>
-					<th>實體課程</th>
-				</tr>
-				<tr>
-					<td>費用</td>
-					<td class="markGreen">較低</td>
-					<td class="markGreen">較低</td>
-					<td>較高</td>
-				</tr>
-				<tr>
-					<td>學習效果</td>
-					<td>一般</td>
-					<td class="markGreen">較低</td>
-					<td class="markGreen">很好</td>
-				</tr>
-				<tr>
-					<td>Code review</td>
-					<td class="markGreen">有</td>
-					<td>無</td>
-					<td>不一定</td>
-				</tr>
-				<tr>
-					<td>課程更新速度</td>
-					<td class="markGreen">普通</td>
-					<td class="markGreen">普通</td>
-					<td>較慢</td>
-				</tr>
-				<tr>
-					<td>多次複習</td>
-					<td class="markGreen">可</td>
-					<td>可</td>
-					<td>不可</td>
-				</tr>
-				<tr>
-					<td>字幕</td>
-					<td class="markGreen">有</td>
-					<td>不一定</td>
-					<td>板書</td>
-				</tr>
-			</table>
+                <tr>
+                    <th>項目</th>
+                    <th>Hex School 線上課程</th>
+                    <th>一般線上課程</th>
+                    <th>實體課程</th>
+                </tr>
+                <tr>
+                    <td>費用</td>
+                    <td class="markGreen">較低</td>
+                    <td class="markGreen">較低</td>
+                    <td>較高</td>
+                </tr>
+                <tr>
+                    <td>學習效果</td>
+                    <td>一般</td>
+                    <td class="markGreen">較低</td>
+                    <td class="markGreen">很好</td>
+                </tr>
+                <tr>
+                    <td>Code review</td>
+                    <td class="markGreen">有</td>
+                    <td>無</td>
+                    <td>不一定</td>
+                </tr>
+                <tr>
+                    <td>課程更新速度</td>
+                    <td class="markGreen">普通</td>
+                    <td class="markGreen">普通</td>
+                    <td>較慢</td>
+                </tr>
+                <tr>
+                    <td>多次複習</td>
+                    <td class="markGreen">可</td>
+                    <td>可</td>
+                    <td>不可</td>
+                </tr>
+                <tr>
+                    <td>字幕</td>
+                    <td class="markGreen">有</td>
+                    <td>不一定</td>
+                    <td>板書</td>
+                </tr>
+            </table>
         </div>
-        <div class="formContent">
+        <div class="formContainer">
             <p>對我們的課程有興趣嗎？</p>
-			<p>歡迎留下您的資料</p>
+            <p>歡迎留下您的資料</p>
+            <form action="index.html">
+                <div class="formText">
+                    <textarea name="content" id="content" placeholder="歡迎留言給我們"></textarea>
+                </div>
+
+                <div class="formInfo">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" placeholder="請輸入姓名">
+
+                    <label for="phone">電話</label>
+                    <input type="text" id="phone" name="phone" placeholder="請輸入電話">
+
+                    <label for="mail">信箱</label>
+                    <input type="text" id="mail" name="mail" placeholder="請輸入有效信箱">
+
+                    <input class="btn" type="submit" value="送出">
+                </div>
+            </form>
         </div>
-
-
+        <div class="footer">
+            <img src="./img/最終作業_images/footerLogo.png" alt="logo">
+            <div class="contact">
+                <p>聯絡我們：<span>hexschool@gmail.com</span></p>
+                <br>
+                <p>電話：<span>0999123456</span></p>
+            </div>
+        </div>
     </div>
 
 </body>
