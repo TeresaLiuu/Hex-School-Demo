@@ -80,6 +80,8 @@ table {
 
 .navbar{
     height:60px;
+    display:flex;
+    justify-content:space-between;
 }
 
 .navbar h1 a {
@@ -95,12 +97,12 @@ table {
 }
 
 .navbar ul{
-    float: right;
     margin-top: 8px;
+    display:flex;
 }
 
 .navbar ul li{
-    float: left;
+    flex-direction: column;
 }
 
 .navbar ul li a{
@@ -115,11 +117,35 @@ table {
     border-bottom: 5px solid #00cc99;
 }
 
+.dropDown{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.dropDown li{
+    position: relative;;
+    text-align: center;
+    background-color: white;
+    z-index: 1;
+}
+
+.dropDown li a:hover{
+    background-color:#ECF1EE  ;
+}
+
+
+.dropDown.active{
+    color: #00cc99;
+    text-align: center;
+}
+
 .banner{
     background-image: url(./img/最終作業_images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     height:400px;
+    z-index:-1;
 }
 
 .intro{
