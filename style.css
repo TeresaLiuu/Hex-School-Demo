@@ -96,16 +96,12 @@ table {
     margin-top: 8px;
 }
 
-.navbar ul{
+.list{
     margin-top: 8px;
     display:flex;
 }
 
-.navbar ul li{
-    flex-direction: column;
-}
-
-.navbar ul li a{
+.list li a{
     display: block;
     color: #00cc99;
     text-decoration: none;
@@ -113,21 +109,19 @@ table {
     padding: 20px 20px 12px 20px;
 }
 
-.navbar ul li a:hover{
+.list li a:hover{
     border-bottom: 5px solid #00cc99;
 }
 
 .dropDown{
-    display:flex;
-    flex-direction: column;
-    
+    display:none;
 }
 
-.dropDown li{
+.dropDown{
     position: relative;;
     text-align: center;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
 }
 
 .dropDown li a:hover{
@@ -140,19 +134,19 @@ table {
     text-align: center;
 }
 
-.banner{
-    background-image: url(./img/最終作業_images/banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:400px;
-    z-index:-1;
+.swiper-container {
+    height: 346px;
+    width: 1002px;
 }
 
+
 .intro{
+    position: relative;
+    z-index: 1;
     display: inline-block;
     box-sizing: border-box;
     margin-top: 100px;
-    padding: 30px 10px;
+    padding: 30px 40px;
     width: 100%;
     background: -webkit-linear-gradient(left , rgb(19, 18, 18) , rgba(18,18,18,.1));
 }
