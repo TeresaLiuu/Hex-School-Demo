@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.list li').click(function(e){
+    $('.list li').click(function (e) {
         e.preventDefault;
         $(this).toggleClass('active');
         $(this).parent().siblings().removeClass('active');
@@ -10,6 +10,7 @@ $(document).ready(function () {
         // Optional parameters
         direction: 'vertical',
         loop: true,
+        speed: 3000,
 
         // Navigation arrows
         navigation: {
@@ -17,9 +18,17 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev',
         },
 
-        fadeEffect: {
-            crossFade: true
-          },
+    });
 
-    })
+    $('.scrollTop a').click(function (e) {
+        e.preventDefault;
+        $('html,body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+      })
 });

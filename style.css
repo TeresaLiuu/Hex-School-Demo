@@ -178,7 +178,7 @@ table {
     margin-left: 2%;
 }
 
-.cards ul li img{
+.cards ul li a img{
     display: block;
     margin: 10px auto;
 }
@@ -197,6 +197,14 @@ table {
     box-shadow: 0 0 0;
     display: list-item;
     min-height: 0;  
+}
+
+.cards ul li .rwd{
+    margin-top: 56px;
+}
+
+.cards ul li .jquery{
+    margin-top: 30px;
 }
 
 .clearfix{
@@ -307,6 +315,12 @@ caption{
 .btn:hover{
     background-color:#335544 ;
     border:2px solid white;
+}
+
+.scrollTop{
+    position: fixed;
+    bottom:0;
+    right:0;
 }
 
 .footer{
