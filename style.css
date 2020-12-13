@@ -79,7 +79,6 @@ table {
 }
 
 .navbar{
-    height:60px;
     display:flex;
     justify-content:space-between;
 }
@@ -143,11 +142,8 @@ table {
 .intro{
     position: relative;
     z-index: 1;
-    display: inline-block;
-    box-sizing: border-box;
     margin-top: 100px;
     padding: 30px 40px;
-    width: 100%;
     background: -webkit-linear-gradient(left , rgb(19, 18, 18) , rgba(18,18,18,.1));
 }
 
@@ -166,21 +162,24 @@ table {
 }
 
 .cards ul li{
-    display: block;
     box-sizing: border-box;
     float: left;
-    width:30%;
+    width:31.33333%;
+    margin: 1%;
     box-shadow: 5px 10px 18px #888888;
-    min-height: 200px;
-    padding:64px;
+    padding:50px;
     font-size: 20px;
     line-height: 40px;
-    margin-left: 2%;
 }
 
 .cards ul li a img{
+    width: 90%;
     display: block;
     margin: 10px auto;
+}
+
+.cards ul li a img:hover{
+    box-shadow: 5px 10px 18px #888888;
 }
 
 .cards ul li h2{
@@ -192,11 +191,10 @@ table {
 .cards ul li ul li{
     list-style: disc;
     margin-left: 40px;
-    width: 100%;
+    width: 80%;
     padding: 0;
     box-shadow: 0 0 0;
     display: list-item;
-    min-height: 0;  
 }
 
 .cards ul li .rwd{
@@ -324,7 +322,7 @@ caption{
 }
 
 .footer{
-    min-height: 100px;
+    padding-bottom:100px;
 }
 
 .footer img{

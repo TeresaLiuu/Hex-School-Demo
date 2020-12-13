@@ -20,12 +20,15 @@ $(document).ready(function () {
 
     });
 
-    $('.scrollTop a').click(function (e) {
-        e.preventDefault;
-        $('html,body').animate({
-            scrollTop: 0
-        }, 1000);
-    });
+    function showBtnCondition() {
+        if ($(this).scrollTop() > 1000) {
+          $('.scrollTop a').fadeIn();
+            } else {
+             $('.scrollTop a').fadeOut();
+           }
+         }
+     $(window).scroll(showBtnCondition);
+       
 
     lightbox.option({
         'resizeDuration': 200,
